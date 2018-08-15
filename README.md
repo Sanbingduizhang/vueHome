@@ -1,4 +1,4 @@
-# forumq
+# vuefourmq
 
 > A Vue.js project
 
