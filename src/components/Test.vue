@@ -1,16 +1,18 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>{{ msg1 }}</h2>
     
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Test',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'This is test html',
+      msg1: '还有谁！',
     }
   }
 }
