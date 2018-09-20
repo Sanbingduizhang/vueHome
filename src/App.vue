@@ -14,7 +14,7 @@
         </div>
         <div class='header-right'>
             <div class="imghead">
-                <img src="/static/index/userhead.jpg">
+                <img src="/static/index/userhead.jpg" class="headimg">
             </div>
             <!-- <ul class='subZhu'>
                 <li class="li1">
@@ -23,9 +23,9 @@
                 <li>
                     <a id='linkSub' href='javascript:void(0);'>登录</a>
                 </li>
-            </ul>
+            </ul> -->
             <div class='head-img' title='头像名称'>
-                <div class="head-mess" style="display:none;">
+                <div class="head-mess">
                     <ul>
                         <li><a href="#">基本资料</a></li>
                         <li><a href="#">文章信息</a></li>
@@ -33,7 +33,7 @@
                         <li><a href="#" class="loginOut">退出</a></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- <router-view/> -->
@@ -114,6 +114,7 @@
 </template>
 
 <script>
+
 </script>
 
 <style>
@@ -121,7 +122,7 @@
   margin : 0;
   padding : 0;
   list-style : none;
-text-decoration : none;
+  text-decoration : none;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -162,7 +163,6 @@ text-decoration : none;
 
 .header .header-left li:hover {
     background-color: #ED7D31;
-    /* border-radius: 50%; */
 }
 .header .header-left li:nth-child(1) {
     margin-left: 0;
@@ -173,33 +173,37 @@ text-decoration : none;
 .header .header-left li:hover{
     background-color: #f0f1f2;
 }
+.header .header-right .headimg{
+    width: 45px;
+    border-radius: 50%;
+}
 .header .header-right{
     float: right;
-    margin-top: 19px;
+    margin-top: 17px;
+    margin-right: 25px;
+    width: 90px;
+    
 }
-.header .header-right .subZhu li{
-    float: left;
-   
+.header .header-right .head-mess{
+    border-radius: 15px;
+    width: 90px;
+    text-align: center;
+    background-color: #fff;
+    height: 125px;
+    /* display: none; */
 }
-.header .header-right .subZhu li a {
-    display: block;
-    height: 40px;
-    width: 50px;
-    line-height: 40px;
-    background-color: #ED7D31;
-    border-radius: 50%;
-    border: 1px solid #ED7D31;
+.header .header-right li a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #636060;
 }
-
-.header .header-right .subZhu li a:active {
-    color: blue;
+.header .header-right li a:hover{
+    background-color: coral;
+    /* color: rgb(47, 163, 62); */
 }
-
-.header .header-right .subZhu li:nth-child(2) {
-    margin-right: 5px;
-    margin-left: 10px;
-}
-
 .content{
     height: 500px;
     background-color: antiquewhite;
