@@ -182,7 +182,6 @@
     margin-top: 17px;
     margin-right: 25px;
     width: 90px;
-    
 }
 .header .header-right .head-mess{
     border-radius: 15px;
@@ -212,7 +211,7 @@
 .bottom {
     width: 100%;
     background-color: #515151;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .bottom .bannerd {
